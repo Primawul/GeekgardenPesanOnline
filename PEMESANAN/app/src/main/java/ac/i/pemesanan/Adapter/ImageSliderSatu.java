@@ -50,33 +50,6 @@ public class ImageSliderSatu extends SliderViewAdapter<ImageSliderSatu.SliderAda
                         .into(viewHolder.imageViewBackground);
                 break;
 
-            case 4:
-                Glide.with(viewHolder.itemView)
-                        .load("https://selerasa.com/wp-content/uploads/2015/11/images_Aneka_Sayur_sup-jagung-wortel.jpg")
-                        .into(viewHolder.imageViewBackground);
-                break;
-            case 5:
-                Glide.with(viewHolder.itemView)
-                        .load("https://cherryberryweb.files.wordpress.com/2016/08/urap-1.jpg?w=816")
-                        .into(viewHolder.imageViewBackground);
-                break;
-            case 6:
-                Glide.with(viewHolder.itemView)
-                        .load("https://www.pantau.com/uploads/news/image/2839-benarkah-makan-sayuran-rebus-bikin-tubuh-makin-sehat-1-1024-768.jpg")
-                        .into(viewHolder.imageViewBackground);
-                break;
-            case 7:
-                Glide.with(viewHolder.itemView)
-                        .load("https://static.republika.co.id/uploads/images/inpicture_slide/memasak-dengan-sayuran-_180325095654-388.jpg")
-                        .into(viewHolder.imageViewBackground);
-                break;
-
-            case 8:
-                Glide.with(viewHolder.itemView)
-                        .load("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfZe4SaFmW8aIFZVw_W2yNMgmFEH1C-tYwD70uhKK6NdwAC--F&usqp=CAU")
-                        .into(viewHolder.imageViewBackground);
-                break;
-
             default:
                 Glide.with(viewHolder.itemView)
                         .load("https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/01/13/1533613903.jpg")
@@ -88,7 +61,7 @@ public class ImageSliderSatu extends SliderViewAdapter<ImageSliderSatu.SliderAda
 
     @Override
     public int getCount() {
-        return 0;
+        return 5;
     }
 
     class SliderAdapterVH extends SliderViewAdapter.ViewHolder{

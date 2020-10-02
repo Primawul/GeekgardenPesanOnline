@@ -20,12 +20,12 @@
                 app:cardCornerRadius="1dp"
                 android:layout_margin="1dp"
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="400dp">
 
                 <com.smarteist.autoimageslider.SliderView
                     android:id="@+id/imageSlider"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="400dp"
                     app:sliderAnimationDuration="600"
                     app:sliderAutoCycleDirection="back_and_forth"
                     app:sliderAutoCycleEnabled="true"
@@ -48,7 +48,7 @@
                     android:scaleType="center"
                     android:id="@+id/iv_auto_image_slider"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp" />
+                    android:layout_height="400dp" />
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -58,14 +58,14 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="0dp"
             android:outlineAmbientShadowColor="@color/green"
             card_view:cardCornerRadius="4dp">
 
             <TextView
                 android:id="@+id/produk"
                 android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_height="300dp"
                 android:text="PRODUK"
                 android:textSize="30dp"
                 android:textColor="@color/green"
@@ -73,7 +73,7 @@
             <TextView
                 android:id="@+id/jasa"
                 android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_height="300dp"
                 android:layout_marginLeft="200dp"
                 android:text="JASA"
                 android:textColor="#000"
