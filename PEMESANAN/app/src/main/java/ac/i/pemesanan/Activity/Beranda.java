@@ -1,10 +1,11 @@
-package ac.i.pemesanan;
+package ac.i.pemesanan.Activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import ac.i.pemesanan.R;
 import ac.i.pemesanan.fragment.Home;
 import ac.i.pemesanan.fragment.Pemesanan;
 import ac.i.pemesanan.fragment.lainlain;

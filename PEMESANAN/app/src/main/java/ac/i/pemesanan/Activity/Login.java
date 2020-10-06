@@ -1,6 +1,6 @@
-package ac.i.pemesanan;
+package ac.i.pemesanan.Activity;
 
-import ac.i.pemesanan.fragment.Home;
+import ac.i.pemesanan.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

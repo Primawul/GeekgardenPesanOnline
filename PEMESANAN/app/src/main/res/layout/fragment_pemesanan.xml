@@ -20,7 +20,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/etnama"
+            android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/masukan_nama"
@@ -28,7 +28,7 @@
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/etemail"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/Email"
@@ -36,7 +36,7 @@
             android:inputType="textEmailAddress"/>
 
         <EditText
-            android:id="@+id/etperusahaan"
+            android:id="@+id/perusahaan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/Nama_perusahaan"
@@ -52,7 +52,7 @@
             android:inputType="text"/>
 
         <EditText
-            android:id="@+id/ettimeline"
+            android:id="@+id/timeline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/Timeline"
@@ -64,7 +64,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/etNomorHp"
+                android:id="@+id/NomorHp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/masukan_nomor_hp"
