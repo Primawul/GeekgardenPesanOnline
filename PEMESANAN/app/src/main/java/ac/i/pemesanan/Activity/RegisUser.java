@@ -9,6 +9,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,7 @@ public class RegisUser extends AppCompatActivity {
         button_regis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                userRegis();
             }
         });
 
@@ -84,7 +85,9 @@ public class RegisUser extends AppCompatActivity {
             @Override
             public void onFailure(Call<ResponRegister> call, Throwable t) {
                 Toast.makeText(RegisUser.this, "network failure :( inform the user and possibly retry ", Toast.LENGTH_SHORT).show();
-
+                startActivity(new Intent(RegisUser.this, Login.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                finish();
             }
         });
     }
