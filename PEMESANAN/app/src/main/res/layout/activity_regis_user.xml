@@ -4,97 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
-    tools:context=".Activity.RegisUser">
-
-    <ImageView
+    tools:context=".signupform">
+    <View
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/header_bg"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_marginTop="50dp"/>
+        android:layout_below="@+id/header_view"
+        android:orientation="vertical">
+        <include layout="@layout/signupform"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="220dp"
-        android:textSize="20dp"
-        android:textColor="#fff"
-        android:text="Usename"/>
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/edtnama"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="@drawable/bulet"
-        android:layout_marginTop="210dp"
-        android:layout_marginLeft="200dp" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="270dp"
-        android:textSize="20dp"
-        android:textColor="#fff"
-        android:text="Email"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bottom_bg"/>
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/edtemail"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:layout_marginLeft="200dp"
-        android:gravity="center"
-        android:background="@drawable/bulet"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="320dp"
-            android:textSize="20dp"
-            android:textColor="#fff"
-            android:text="Nomor Hp"/>
-
-    <EditText
-        android:id="@+id/edtnomor"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
-        android:layout_marginLeft="200dp"
-        android:gravity="center"
-        android:background="@drawable/bulet"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="370dp"
-        android:textSize="20dp"
-        android:textColor="#fff"
-        android:text="Password"/>
-
-    <EditText
-        android:id="@+id/edtpass"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="200dp"
-        android:gravity="center"
-        android:background="@drawable/bulet"/>
-
-    <Button
-        android:id="@+id/buttonRegis"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:background="#25D366"
-        android:layout_marginTop="500dp"
-        android:text="@string/Register"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
 
 </RelativeLayout>

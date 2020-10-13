@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
-
     private EditText edemail , edpassword;
     private Button btn_login;
 
@@ -20,8 +19,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        edemail=findViewById(R.id.emailuser);
-        edpassword=findViewById(R.id.Passworduser);
+        edemail=findViewById(R.id.email);
+        edpassword=findViewById(R.id.password);
         btn_login=findViewById(R.id.button);
 
         btn_login.setOnClickListener(new View.OnClickListener() {

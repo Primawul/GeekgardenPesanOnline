@@ -28,12 +28,11 @@ public class RegisUser extends AppCompatActivity {
         setContentView(R.layout.activity_regis_user);
 
 
-        editText_nama=findViewById(R.id.edtnama);
-        editText_email=findViewById(R.id.edtemail);
-        editText_password=findViewById(R.id.edtpass);
-        editText_phone=findViewById(R.id.edtnomor);
+        editText_nama=findViewById(R.id.editName);
+        editText_email=findViewById(R.id.editEmail);
+        editText_password=findViewById(R.id.editPass);
 
-        button_regis=findViewById(R.id.buttonRegis);
+        button_regis=findViewById(R.id.buttonAcount);
 
         button_regis.setOnClickListener(new View.OnClickListener() {
             @Override
