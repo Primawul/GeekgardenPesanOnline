@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.gson.JsonObject;
+
 public class RegisUser extends AppCompatActivity {
 
     private EditText editText_nama, editText_email, editText_phone, editText_password;
@@ -27,9 +29,9 @@ public class RegisUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regis_user);
 
-
         editText_nama=findViewById(R.id.editName);
         editText_email=findViewById(R.id.editEmail);
+        editText_phone=findViewById(R.id.editphone);
         editText_password=findViewById(R.id.editPass);
 
         button_regis=findViewById(R.id.buttonAcount);
@@ -48,16 +50,21 @@ public class RegisUser extends AppCompatActivity {
 
         String nama=editText_nama.getText().toString();
         String email=editText_email.getText().toString();
-        String pass=editText_password.getText().toString();
         String phone=editText_phone.getText().toString();
+        String pass=editText_password.getText().toString();
+
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("nameOrd", String.valueOf(nama));
+        jsonObject.addProperty("username", String.valueOf(email));
+        jsonObject.addProperty("email", String.valueOf(phone));
+        jsonObject.addProperty("password", String.valueOf(pass));
 
         RetrofitMethod retrofitMethod =  RetrofitLinkApi.getRetrofitLogin().create(RetrofitMethod.class);
-        Call<ResponRegister> call= retrofitMethod.registerUser(nama,email,pass,phone);
+        Call<ResponRegister> call= retrofitMethod.registerUser(jsonObject);
         call.enqueue(new Callback<ResponRegister>() {
             @Override
             public void onResponse(Call<ResponRegister> call, Response<ResponRegister> response) {
                 if(response.isSuccessful()){
-
                 }
 
                 else {
